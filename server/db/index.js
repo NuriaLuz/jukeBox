@@ -1,10 +1,18 @@
 const db = require('./db')
-// require each of your models here...
+const Album = require('./Album')
+const Artist = require('./Artist')
+const Song = require('./Song')
 
-// ...and give them some nice associations here!
+Artist.hasMany(Song)
+Album.hasMany(Song)
+Artist.hasMany(Album)
+Song.belongsTo(Album)
+Song.belongsTo(Artist)
+Album.belongsTo(Artist)
 
 module.exports = {
   db,
-  // Include your models in your module.exports as well!
-  // The seed file expects to find them there!
+  Album,
+  Artist,
+  Song
 }
