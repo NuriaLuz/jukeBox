@@ -1,4 +1,4 @@
-const Sequelize = require('sequelize');
+const Sequelize = require('Sequelize');
 const db = require('./db');
 
 const Artist = db.define('artist', {
@@ -8,4 +8,4 @@ const Artist = db.define('artist', {
     }
 });
 
-module.export = Artist;
+module.exports = Artist;
