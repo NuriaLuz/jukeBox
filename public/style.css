@@ -9,7 +9,7 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(45deg, #222, #333);
+  background: linear-gradient(45deg, rgb(48, 19, 85), #333);
   background-attachment: fixed;
   color: #f2f2f2;
   letter-spacing: 0.03em;
