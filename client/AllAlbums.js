@@ -8,15 +8,12 @@ const AllAlbums = (props) => {
                 <div className='album row'>
                     {albums.map(album => {
                         return (
-                            
-                                <div className='album'>
-                                    <img src={album.artworkUrl} />
-                                    <p>{album.name}</p>
-                                    <small>{album.artist.name}</small>
-                                </div>
+                            <div className='album' key={album.id}>
+                                <img src={album.artworkUrl} />
+                                <p>{album.name}</p>
+                                <small>{album.artist.name}</small>
+                            </div>
                         )
-
-
                     })
                     }
 
